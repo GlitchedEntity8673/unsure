@@ -1,0 +1,58 @@
+local A_1 = "Successfully loaded BibleBotV2, Verse Edition. Made by Buzz. Loading..."
+	local A_2 = "All"
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+	Event:FireServer(A_1, A_2)
+
+	wait(5);
+
+	while true do
+		loadstring(game:HttpGet("https://pastebin.com/raw/dSmV5GxT"))()
+
+		wait(0.2);
+
+		loadstring(game:HttpGet("https://pastebin.com/raw/by6w5efL"))()
+
+		wait(0.2);
+
+		loadstring(game:HttpGet("https://pastebin.com/raw/DtpFM6EE"))()
+
+		wait(0.2);
+
+		loadstring(game:HttpGet("https://pastebin.com/raw/XEUTs09t"))()
+
+		wait(0.2);
+
+		loadstring(game:HttpGet("https://pastebin.com/raw/jNPg6PgJ"))()
+
+		wait(0.2);
+	
+		loadstring(game:HttpGet("https://pastebin.com/raw/KJ76e5Kb"))()
+	
+		wait(0.2);
+	
+		loadstring(game:HttpGet("https://pastebin.com/raw/5Mf93KVh"))()
+
+		wait(0.2);
+	
+		loadstring(game:HttpGet("https://pastebin.com/raw/CxyPmPmV"))()
+
+		wait(0.2);
+
+		loadstring(game:HttpGet("https://pastebin.com/raw/ueyvGXXF"))()
+
+		wait(0.2);
+	
+		loadstring(game:HttpGet("https://pastebin.com/raw/XuT8Yj3U"))()
+		wait(0.2);
+		loadstring(game:HttpGet("https://pastebin.com/raw/ujaSshu1"))()
+		wait(0.2);
+		loadstring(game:HttpGet("https://pastebin.com/raw/BjrE31Gy"))()
+		wait(0.2);
+		loadstring(game:HttpGet("https://pastebin.com/raw/9Jx7vyfE"))()
+		wait(0.2);
+		loadstring(game:HttpGet("https://pastebin.com/raw/tj5aKJwx"))()
+		wait(0.2);
+		loadstring(game:HttpGet("https://pastebin.com/raw/8ZAUTRQp"))()
+		wait(0.2);
+		loadstring(game:HttpGet("https://pastebin.com/raw/dSmV5GxT"))()
+	end
