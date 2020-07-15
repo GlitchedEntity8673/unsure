@@ -1,0 +1,81 @@
+
+-- Instances:
+
+local UltraV = Instance.new("ScreenGui")
+local AdminFrame = Instance.new("ImageLabel")
+local CmdBox = Instance.new("TextBox")
+
+--Properties:
+
+UltraV.Name = "UltraV"
+UltraV.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UltraV.ResetOnSpawn = false
+
+AdminFrame.Name = "AdminFrame"
+AdminFrame.Parent = UltraV
+AdminFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminFrame.BackgroundTransparency = 1.000
+AdminFrame.Position = UDim2.new(0.0785091221, 0, -0.200000003, 0)
+AdminFrame.Size = UDim2.new(0, 1062, 0, 85)
+AdminFrame.Image = "rbxassetid://3570695787"
+AdminFrame.ImageColor3 = Color3.fromRGB(108, 108, 108)
+AdminFrame.ScaleType = Enum.ScaleType.Slice
+AdminFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+AdminFrame.SliceScale = 0.120
+
+CmdBox.Name = "CmdBox"
+CmdBox.Parent = AdminFrame
+CmdBox.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+CmdBox.BorderSizePixel = 0
+CmdBox.Position = UDim2.new(0.0357815474, 0, 0.200000003, 0)
+CmdBox.Size = UDim2.new(0, 986, 0, 50)
+CmdBox.Font = Enum.Font.SourceSans
+CmdBox.PlaceholderText = "Enter your command here"
+CmdBox.Text = ""
+CmdBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+CmdBox.TextSize = 30.000
+CmdBox.TextXAlignment = Enum.TextXAlignment.Left
+
+--Commands
+local CMD1 = "febtools"
+local CMD2 = "fly"
+--Scripts
+
+local IsOpen = false
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+	if key == "-" then
+		if IsOpen == false then
+			AdminFrame:TweenPosition(UDim2.new(0.222, 0, 0.222, 0),"Out","Quad",0.4)
+			CmdBox:CaptureFocus()
+			IsOpen = true
+			wait(0.001);
+			CmdBox.Text = ""
+		elseif IsOpen == true then
+			AdminFrame:TweenPosition(UDim2.new(0.0785091221, 0, -0.200000003, 0),"In","Quad",0.4)
+            IsOpen = false
+		end
+	end
+end)
+
+CmdBox.FocusLost:connect(function(enterPressed)
+	if enterPressed then
+		if IsOpen == true then
+			--if statements below this and above tween thing
+            if CmdBox.Text == CMD1 then
+				loadstring(game:HttpGet("https://ssbtools.netlify.app/newscript.txt"))()
+			elseif CmdBox.Text == CMD2 then
+				loadstring(game:HttpGet("https://pastebin.com/raw/CfaSpNqA"))()
+            end
+			AdminFrame:TweenPosition(UDim2.new(0.0785091221, 0, -0.200000003, 0),"In","Quad",0.4)
+			IsOpen = false
+		end
+	end
+end)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Whitelisted.";
+	Text = "Made by Epic Guy 2007";
+	Duration = 4;
+					})
