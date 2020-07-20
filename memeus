@@ -1,16 +1,10 @@
-function LoadLibrary(a)
-return loadstring(game:HttpGet("https://pastebin.com/raw/UfzKgS6T", true))()
-end
-loadstring(game:GetObjects("rbxassetid://4480871791")[1].Source)()
-
+loadstring(game:HttpGet("https://pastebin.com/raw/ndNH18Eb"))()
 -----------------------
 --MemeusV2--
 -------------------------------------------------------
 --A script By makhail07
 
---This edit by 2003boobear
-
---Discord Creterisk#2958 (not 2003boobear's discord)
+--Discord Creterisk#2958 
 -------------------------------------------------------
 
 local FavIDs = {
@@ -31,11 +25,9 @@ local FavIDs = {
 
 --The reality of my life isn't real but a Universe -makhail07
 wait()
-local Player = game.Players.localPlayer
-local Character = Player.Character
 local plr = game:service'Players'.LocalPlayer
-local Humanoid = Character.Humanoid
-local char = game.Workspace.CloneCharacter
+print('Local User is '..plr.Name)
+local char = plr.Character
 local hum = char.Humanoid
 local ra = char["Right Arm"]
 local la= char["Left Arm"]
@@ -49,23 +41,7 @@ local mouse = plr:GetMouse()
 local RootCF = CFrame.fromEulerAnglesXYZ(-1.57, 0, 3.14)
 local RHCF = CFrame.fromEulerAnglesXYZ(0, 1.6, 0)
 local LHCF = CFrame.fromEulerAnglesXYZ(0, -1.6, 0)
-local cam = game.Workspace.CurrentCamera
-trazx = Instance.new("ParticleEmitter")
-c = game.Players.LocalPlayer.Character
 
---where i put all the warn things
-
-warn ("Well Look at that, I finished it.")
---Looks Like you decided to look though the script. Well, Hello.
-warn ("I had a fun time making this edit.")
---I Really DID have fun editing this.
-warn ("I hope you Enjoy this. Go have Fun!")
---Just don't abuse.
-warn ("Also, the original MemeusV2 was made by makhail07.")
---Support makhail07 for making the original!
-warn ("This edit was made by me, 2003boobear.")
---This is one of my best edits BY FAR, though.
-Character.Head.face.Texture = "rbxassetid://620619801"
 
 -------------------------------------------------------
 --Start Good Stuff--
@@ -73,7 +49,6 @@ Character.Head.face.Texture = "rbxassetid://620619801"
 CF = CFrame.new
 angles = CFrame.Angles
 attack = false
-timetofly = true
 Euler = CFrame.fromEulerAnglesXYZ
 Rad = math.rad
 IT = Instance.new
@@ -85,11 +60,6 @@ Asin = math.asin
 Abs = math.abs
 Mrandom = math.random
 Floor = math.floor
-random = math.random
-radian = math.rad
-Vec3 = Vector3.new
-cFrame = CFrame.new
-Euler = CFrame.fromEulerAnglesXYZ
 -------------------------------------------------------
 --End Good Stuff--
 -------------------------------------------------------
@@ -156,82 +126,6 @@ end)
 -------------------------------------------------------
 --End HeartBeat--
 -------------------------------------------------------
-
-function CameraEnshaking(Length, Intensity) --Took Straight from StarGlitcher!
-	coroutine.resume(coroutine.create(function()
-		local intensity = 1 * Intensity
-		local rotM = 0.01 * Intensity
-		for i = 0, Length, 0.1 do
-			swait()
-			intensity = intensity - 0.05 * Intensity / Length
-			rotM = rotM - 5.0E-4 * Intensity / Length
-			hum.CameraOffset = Vec3(radian(random(-intensity, intensity)), radian(random(-intensity, intensity)), radian(random(-intensity, intensity)))
-			cam.CFrame = cam.CFrame * cFrame(radian(random(-intensity, intensity)), radian(random(-intensity, intensity)), radian(random(-intensity, intensity))) * Euler(radian(random(-intensity, intensity)) * rotM, radian(random(-intensity, intensity)) * rotM, radian(random(-intensity, intensity)) * rotM)
-		end
-		Humanoid.CameraOffset = Vec3(0, 0, 0)
-	end))
-end
-
-        local joyemoji = Instance.new('ParticleEmitter', tors)
-        joyemoji.VelocitySpread = 2000
-        joyemoji.Lifetime = NumberRange.new(1)
-        joyemoji.Speed = NumberRange.new(40)
-joy= {}
-for i=0, 19 do
-  joy[#joy+ 1] = NumberSequenceKeypoint.new(i/19, math.random(1, 1))
-end
-joyemoji.Size = NumberSequence.new(joy)
-        joyemoji.Rate = 0
-        joyemoji.LockedToPart = false
-        joyemoji.LightEmission = 0
-        joyemoji.Texture = "rbxassetid://1176402123"
-        joyemoji.Color = ColorSequence.new(BrickColor.new("Institutional white").Color)
-
-
-        local LIT = Instance.new('ParticleEmitter', tors)
-        LIT.VelocitySpread = 2000
-        LIT.Lifetime = NumberRange.new(1)
-        LIT.Speed = NumberRange.new(45)
-nani= {}
-for i=0, 19 do
-  nani[#nani+ 1] = NumberSequenceKeypoint.new(i/19, math.random(1, 1))
-end
-LIT.Size = NumberSequence.new(nani)
-        LIT.Rate = 0
-        LIT.LockedToPart = false
-        LIT.LightEmission = 0
-        LIT.Texture = "rbxassetid://1492670151"
-        LIT.Color = ColorSequence.new(BrickColor.new("Institutional white").Color)
-
-        local toast = Instance.new('ParticleEmitter', tors)
-        toast.VelocitySpread = 2000
-        toast.Lifetime = NumberRange.new(1)
-        toast.Speed = NumberRange.new(60)
-toasterstoasttoast= {}
-for i=0, 19 do
-  toasterstoasttoast[#toasterstoasttoast+ 1] = NumberSequenceKeypoint.new(i/19, math.random(1, 1))
-end
-toast.Size = NumberSequence.new(toasterstoasttoast)
-        toast.Rate = 0
-        toast.LockedToPart = false
-        toast.LightEmission = 0
-        toast.Texture = "rbxassetid://436096230"
-        toast.Color = ColorSequence.new(BrickColor.new("Institutional white").Color)
-
-        local ok = Instance.new('ParticleEmitter', tors)
-        ok.VelocitySpread = 2000
-        ok.Lifetime = NumberRange.new(1)
-        ok.Speed = NumberRange.new(50)
-cool= {}
-for i=0, 19 do
-  cool[#cool+ 1] = NumberSequenceKeypoint.new(i/19, math.random(1, 1))
-end
-ok.Size = NumberSequence.new(cool)
-        ok.Rate = 0
-        ok.LockedToPart = false
-        ok.LightEmission = 0
-        ok.Texture = "rbxassetid://636768448"
-        ok.Color = ColorSequence.new(BrickColor.new("Institutional white").Color)
 
 -------------------------------------------------------
 --Start Kyu's shitty stuff--
@@ -1028,7 +922,7 @@ Push = {
 --End Effect Function--
 -------------------------------------------------------
 
-function CreateSound(ID, PARENT, VOLUME, PITCH) --Very important.
+function CreateSound(ID, PARENT, VOLUME, PITCH)
 	local NSound = nil
 	coroutine.resume(coroutine.create(function()
 		NSound = Instance.new("Sound", PARENT)
@@ -1050,52 +944,6 @@ end
 --End Important Functions--
 -------------------------------------------------------
 
-chargeup = Instance.new("Sound", hed)
-chargeup.SoundId = "http://www.roblox.com/asset/?id=527276541"
-chargeup.Volume = 10
-chargeup.Pitch = 1
-chargeup.Looped = true
-chargeup.TimePosition = 1
-
-meme = Instance.new("Sound", hed)
-meme.SoundId = "http://www.roblox.com/asset/?id=291151190"
-meme.Volume = 10
-meme.Pitch = 1
-meme.Looped = true
-meme.TimePosition = 1
-
-local ohno = Instance.new("Sound")
-ohno.Parent = hed
-ohno.Volume = 10
-ohno.Pitch = 1
-ohno.Looped = true
-
-local bass = Instance.new("Sound") --why
-bass.Parent = hed
-bass.Volume = 7
-bass.Pitch = 1
-bass.SoundId = "http://www.roblox.com/asset/?id=1087356234"
-bass.Looped = true
-
-Cause_Im_having_a_good_time_having_a_good_time = Instance.new("Sound", hed) --DONT STOP ME NOOOOOOOOOWWWWWWWW
-Cause_Im_having_a_good_time_having_a_good_time.SoundId = "http://www.roblox.com/asset/?id=672104253"
-Cause_Im_having_a_good_time_having_a_good_time.Volume = 10
-Cause_Im_having_a_good_time_having_a_good_time.Pitch = 1
-Cause_Im_having_a_good_time_having_a_good_time.Looped = false
-Cause_Im_having_a_good_time_having_a_good_time.TimePosition = 35.3
-
-STHAP = Instance.new("Sound", hed)
-STHAP.SoundId = "http://www.roblox.com/asset/?id=1591656314"
-STHAP.Volume = 10
-STHAP.Pitch = 1
-STHAP.Looped = false
-
-forevergone = Instance.new("Sound", tors)
-forevergone.SoundId = "http://www.roblox.com/asset/?id=1286436928"
-forevergone.Volume = 10
-forevergone.Pitch = 1
-forevergone.Looped = true
-forevergone.TimePosition = 24
 
 -------------------------------------------------------
 --Start Music Option--
@@ -1109,7 +957,8 @@ Music:Play()
 -------------------------------------------------------
 --End Music Option--
 -------------------------------------------------------
---hi fat >:)
+
+
 -------------------------------------------------------
 --Start Attacks N Stuff--
 -------------------------------------------------------
@@ -1127,120 +976,49 @@ function HitboxFunction(Pose, lifetime, siz1, siz2, siz3, Radie, Min, Max, kb, a
 end
 function GEtOuT()
 	attack = true
-	hum.WalkSpeed = 10
-        Character.Head.face.Texture = "rbxassetid://494811799"
-        CreateSound("814652778", hed, 10, 1)
-        CreateSound("537371462", hed, 10, 1)
-        local vel3 = Instance.new("BodyVelocity",tors)
-        vel3.Velocity = Vector3.new(0,25,0)
-        vel3.MaxForce = Vector3.new(10000000,10000000,10000000)
-	for i = 0,12,0.1 do
+	hum.WalkSpeed = 2.01
+	CreateSound("749031341", hed, 10, 1)
+	for i = 0,2,0.1 do
 		swait()
-		CameraEnshaking(1, 2)
-	        HitboxFunction(ll.CFrame, 0.01, 1, 1, 1, 7, 20, 99, 53, "Knockdown")
-                rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0-255.45*i)), 0.3)
-                tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-40), Rad(0), Rad(0)), 0.3)
-                RW.C0 = clerp(RW.C0, CF(1.5, 0.5, 0) * angles(Rad(30), Rad(0), Rad(20)), 0.3)
-                LW.C0 = clerp(LW.C0, CF(-1.5, 0.5, 0) * angles(Rad(-20), Rad(0), Rad(-30)), 0.3)
-                LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), -0.3) * LHCF * angles(Rad(-5), Rad(0), Rad(20)), 0.15)
-                RH.C0 = clerp(RH.C0, CF(1, -1, 0.3) * angles(Rad(0), Rad(90), Rad(-20)), 0.3)
+		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.5) * angles(Rad(50), Rad(0), Rad(0)), 0.15)
+		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
+		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
+		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
+		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-90), Rad(0), Rad(5)), 0.1)
+		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-90), Rad(0), Rad(-5)), 0.1)
 	end
-        vel3:Destroy()
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	attack = false
-        Humanoid.JumpPower = 50
-	hum.WalkSpeed = 16
-end
-
-function GEtOuT2()
-	attack = true
-	hum.WalkSpeed = 10
-        Humanoid.JumpPower = 0
-        Character.Head.face.Texture = "rbxassetid://494811799"
-        CreateSound("814652778", hed, 10, 1)
-        CreateSound("537371462", hed, 10, 1)
-        root.Velocity = root.CFrame.lookVector * 20
-	for i = 0,12,0.1 do
+	HitboxFunction(ll.CFrame, 0.01, 1, 1, 1, 7, 7, 10, 53, "Knockdown")
+	for i = 0,4,0.1 do
 		swait()
-		CameraEnshaking(1, 2)
-                root.Velocity = root.CFrame.lookVector * 50
-	        HitboxFunction(ll.CFrame, 0.01, 1, 1, 1, 7, 10, 50, 53, "Knockdown")
-                rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(90), Rad(0), Rad(0-255.45*i)), 0.3)
-                tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-40), Rad(0), Rad(0)), 0.3)
-                RW.C0 = clerp(RW.C0, CF(1.5, 0.5, 0) * angles(Rad(30), Rad(0), Rad(20)), 0.3)
-                LW.C0 = clerp(LW.C0, CF(-1.5, 0.5, 0) * angles(Rad(-20), Rad(0), Rad(-30)), 0.3)
-                LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), -0.3) * LHCF * angles(Rad(-5), Rad(0), Rad(20)), 0.15)
-                RH.C0 = clerp(RH.C0, CF(1, -1, 0.3) * angles(Rad(0), Rad(90), Rad(-20)), 0.3)
+		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.5) * angles(Rad(-50), Rad(0), Rad(0)), 0.15)
+		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
+		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(40)), 0.15)
+		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(40)), 0.15)
+		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-90), Rad(0), Rad(5)), 0.1)
+		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-90), Rad(0), Rad(-5)), 0.1)
 	end
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	attack = false
-        Humanoid.JumpPower = 50
-	hum.WalkSpeed = 16
-end
-function Flight() --wowthatsdiffrent
-attack = true
-Character.Head.face.Texture = "rbxassetid://269748407"
-local ColorsArray ={ColorSequenceKeypoint.new(0, Color3.new(1,0,0)),
-ColorSequenceKeypoint.new(0.16, Color3.new(1,1,1)),
-ColorSequenceKeypoint.new(0.32, Color3.new(0,0,1)),
-ColorSequenceKeypoint.new(0.48, Color3.new(1,1,1)),
-ColorSequenceKeypoint.new(0.64, Color3.new(1,0,0)),
-ColorSequenceKeypoint.new(0.80, Color3.new(1,1,1)),
-ColorSequenceKeypoint.new(0.96, Color3.new(0,0,1)),
-ColorSequenceKeypoint.new(1, Color3.new(1,1,1))}
-local vel4 = Instance.new("BodyVelocity",ll)
-vel4.Velocity = Vector3.new(0,4,0)
-vel4.MaxForce = Vector3.new(10000000,10000000,10000000)
-local Atch3 = Instance.new("Attachment",ll)Atch3.Position = Vector3.new(0,0.6,0)
-local Atch4 = Instance.new("Attachment",ll)Atch4.Position = Vector3.new(0,-0.6,0)
-local Trail2 = Instance.new("Trail",ll)Trail2.Attachment0 = Atch3 Trail2.Attachment1 = Atch4
-Trail2.Texture = "rbxassetid://22636887" Trail2.Lifetime = 0.2 Trail2.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-Trail2.Color = ColorSequence.new(ColorsArray) Trail2.LightEmission = 1 
-Trail2.Enabled = true
-local Atch5 = Instance.new("Attachment",rl)Atch5.Position = Vector3.new(0,0.6,0)
-local Atch6 = Instance.new("Attachment",rl)Atch6.Position = Vector3.new(0,-0.6,0)
-local Trail3 = Instance.new("Trail",rl)Trail3.Attachment0 = Atch5 Trail3.Attachment1 = Atch6
-Trail3.Texture = "rbxassetid://22636887" Trail3.Lifetime = 0.2 Trail3.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-Trail3.Color = ColorSequence.new(ColorsArray) Trail3.LightEmission = 1 
-Trail3.Enabled = true
-local Atch7 = Instance.new("Attachment",ra)Atch7.Position = Vector3.new(0,0.6,0)
-local Atch8 = Instance.new("Attachment",ra)Atch8.Position = Vector3.new(0,-0.6,0)
-local Trail4 = Instance.new("Trail",ra)Trail4.Attachment0 = Atch7 Trail4.Attachment1 = Atch8
-Trail4.Texture = "rbxassetid://22636887" Trail4.Lifetime = 0.2 Trail4.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-Trail4.Color = ColorSequence.new(ColorsArray) Trail4.LightEmission = 1 
-Trail4.Enabled = true
-local Atch9 = Instance.new("Attachment",la)Atch9.Position = Vector3.new(0,0.6,0)
-local Atch10 = Instance.new("Attachment",la)Atch10.Position = Vector3.new(0,-0.6,0)
-local Trail5 = Instance.new("Trail",la)Trail5.Attachment0 = Atch9 Trail5.Attachment1 = Atch10
-Trail5.Texture = "rbxassetid://22636887" Trail5.Lifetime = 0.2 Trail5.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-Trail5.Color = ColorSequence.new(ColorsArray) Trail5.LightEmission = 1 
-Trail5.Enabled = true
-local Atch1 = Instance.new("Attachment",Torso)Atch1.Position = Vector3.new(0,2,0)
-local Atch2 = Instance.new("Attachment",Torso)Atch2.Position = Vector3.new(0,-2.5,0)
-local Trail = Instance.new("Trail",Torso)Trail.Attachment0 = Atch1 Trail.Attachment1 = Atch2
-Trail.Texture = "rbxassetid://22636887" Trail.Lifetime = 0.2 Trail.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0,0),NumberSequenceKeypoint.new(1,0,0)})
-Trail.Color = ColorSequence.new(ColorsArray) Trail.LightEmission = 1 
-Trail.Enabled = false
-ragdoll(char)
-wait(1)
-Character.Head.face.Texture = "rbxassetid://249062487"
-CreateSound("948494432", hed, 10, 1)
-wait(2)
-Character.Head.face.Texture = "rbxassetid://269748407"
-CreateSound("633394595", hed, 10, 1)
-wait(2)
-Character.Head.face.Texture = "rbxassetid://494811799"
-STHAP:play()
-wait(11)
-forevergone:play()
-end
+	local Blobby = Instance.new("Part", char)
+Blobby.Name = "Blob"
+Blobby.CanCollide = false
+Blobby.BrickColor = BrickColor.new("Really black")
+Blobby.Transparency = 0
+Blobby.Material = "Plastic"
+Blobby.Size = Vector3.new(1, 1, 2)
+Blobby.TopSurface = Enum.SurfaceType.Smooth
+Blobby.BottomSurface = Enum.SurfaceType.Smooth
 
-function OBJECTION()
-	attack = true
-	hum.WalkSpeed = 10
-        Character.Head.face.Texture = "rbxassetid://55831869"
-	CreateSound("330859085", hed, 10, 1)
-	for i = 0,8,0.1 do
+local Weld = Instance.new("Weld", Blobby)
+Weld.Part0 = ra
+Weld.Part1 = Blobby
+Weld.C1 = CFrame.new(0, -.3, 1.4)
+Weld.C0 = CFrame.Angles(math.rad(-90),0,0)
+
+local M2 = Instance.new("SpecialMesh")
+M2.Parent = Blobby
+M2.MeshId = "http://www.roblox.com/asset/?id=491267221"
+M2.TextureId = "http://www.roblox.com/asset/?id=491267267"
+M2.Scale = Vector3.new(0.65, 0.65, 0.65)
+	for i = 0,6,0.1 do
 		swait()
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
 		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
@@ -1249,94 +1027,15 @@ function OBJECTION()
 		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(180), Rad(0), Rad(5)), 0.1)
 		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-5)), 0.1)
 	end
+	Blobby.Transparency = 1
+	Blobby:Destroy()
 	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function Hello()
-	attack = true
-	hum.WalkSpeed = 10
-        Character.Head.face.Texture = "rbxassetid://334668738"
-	CreateSound("855338765", hed, 10, 0.9)
-	for i = 0,3,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(180), Rad(20), Rad(-5)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function Victory()
-	attack = true
-	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://616284160"
-        Humanoid.Jump = true
-        CreateSound("130834939", hed, 10, 1)
-        for i = 0,3.7,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(180), Rad(20), Rad(-5)), 0.1)
-        end
-        Humanoid.Jump = true
-        for i = 0,3.7,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(40)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(40)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-180), Rad(-25), Rad(5)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-0)), 0.1)
-        end
-        Humanoid.Jump = true
-        for i = 0,3.7,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(180), Rad(20), Rad(-5)), 0.1)
-        end
-        Humanoid.Jump = true
-        for i = 0,3.7,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(40)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(40)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-180), Rad(-25), Rad(5)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-0)), 0.1)
-        end
-        Humanoid.Jump = true
-        for i = 0,3.7,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.2) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-40)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(180), Rad(20), Rad(-5)), 0.1)
-        end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	hum.WalkSpeed = 16
 end
 
 function ShutTheHellUp()
 	attack = true
 	hum.WalkSpeed = 2.01
-        Character.Head.face.Texture = "rbxassetid://963148419"
 	CreateSound("336377340", hed, 10, 1)
 	for i = 0,3,0.1 do
 		swait()
@@ -1402,23 +1101,15 @@ function ShutTheHellUp()
 		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-5)), 0.1)
 	end
 	hum.WalkSpeed = 16
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	attack = false
 end
 
-function SpinMeDad() --YOU SPIN ME RIGHT ROUND BABY RIGHT ROUND
+function SpinMeDad()
 	attack = true
-	hum.WalkSpeed = 5
-        Humanoid.JumpPower = 175
-        Character.Head.face.Texture = "rbxassetid://1223903433"
+	hum.WalkSpeed = 1.01
 	CreateSound("145799973", hed, 10, 1)
-        local vel2 = Instance.new("BodyVelocity",tors)
-        vel2.Velocity = Vector3.new(0,1.2,0)
-        vel2.MaxForce = Vector3.new(10000000,10000000,10000000)
-	for i = 0,60,0.1 do
-	        HitboxFunction(ll.CFrame, 0.01, 1, 1, 1, 7, 5, 20, 53, "Knockdown")
+	for i = 0,58,0.1 do
 		swait()
-		CameraEnshaking(1, 1)
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0-255.45*i)), 0.15)
 		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
 		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
@@ -1427,44 +1118,15 @@ function SpinMeDad() --YOU SPIN ME RIGHT ROUND BABY RIGHT ROUND
 		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-90)), 0.1)
 	end
 	hum.WalkSpeed = 16
-        vel2:Destroy()
-        Character.Head.face.Texture = "rbxassetid://620619801"
-        Humanoid.JumpPower = 50
 	attack = false
 end
 
-function EndMySufferingV2() --why
+function EndMySufferingV2()
 	attack = true
 	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://202210455"
-        local A = math.random(1,5)
-        if A == 1 then
-            meme.SoundId = "rbxassetid://295810519"
-        end
-        if A == 2 then
-            meme.SoundId = "rbxassetid://1124778077"
-        end
-        if A == 3 then
-            meme.SoundId = "rbxassetid://464157070"
-        end
-        if A == 4 then
-            meme.SoundId = "rbxassetid://146334595"
-        end
-        if A == 5 then
-            meme.SoundId = "rbxassetid://145536915"
-        end
-        meme:Play()
-        bass:Play()
-        joyemoji.Rate = 70
-        LIT.Rate = 70
-        ok.Rate = 70
-        toast.Rate = 70
-        
-	for i = 0,50,0.1 do
+	CreateSound("577475178", hed, 10, 1)
+	for i = 0,18,0.1 do
 		swait()
-	CameraEnshaking(1, 10)
-        bass.Parent = hed
-        meme.Parent = hed
 	rootj.C0=clerp(rootj.C0,RootCF*CF(0,0,-0.1+0.1*math.cos(sine/20))*angles(math.rad(15),math.rad(-10),math.rad(0)),0.15)
 	tors.Neck.C0=clerp(tors.Neck.C0,necko*angles(math.rad(35),math.rad(0),math.rad(0)),.3)
 	RH.C0=clerp(RH.C0,CF(1,-.9-0.1*math.cos(sine/20),.025*math.cos(sine/20))*RHCF*angles(math.rad(-5),math.rad(0),math.rad(0)),0.15)
@@ -1472,146 +1134,14 @@ function EndMySufferingV2() --why
 	RW.C0 = clerp(RW.C0, CFrame.new(1.1, 0.5+0.1*math.sin(sine/30), -0.6) * angles(math.rad(-0), math.rad(10), math.rad(-110)), 0.1)
 	LW.C0 = clerp(LW.C0, CFrame.new(-1.5, 0.5+0.1*math.sin(sine/30), 0.055*math.cos(sine/20)) * angles(math.rad(-0), math.rad(-10), math.rad(-105)), 0.1)
 	end
-        bass:Stop()
-        meme:Stop()
-        joyemoji.Rate = 0
-        LIT.Rate = 0
-        ok.Rate = 0
-        toast.Rate = 0
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	attack = false
 	hum.WalkSpeed = 16
 end
 
-function HELP()
-	attack = true
-	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://307972876"
-	CreateSound("1123321019", hed, 10, 1)
-	for i = 0,15,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-	end
-  	CreateSound("198462271", hed, 10, 1)
-	for i = 0,8,0.1 do
-                Character.Head.face.Texture = "rbxassetid://341497730"
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-	end
-	for i = 0,8,0.1 do
-                Character.Head.face.Texture = "rbxassetid://341497730"
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(60), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-	end
-  	CreateSound("948494432", hed, 10, 1)
-	for i = 0,7.5,0.1 do
-                Character.Head.face.Texture = "rbxassetid://249062487"
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(60), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-	end
-  	CreateSound("1542642349", hed, 10, 1)
-	for i = 0,10,0.1 do
-                Character.Head.face.Texture = "rbxassetid://270636807"
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-	end
-  	CreateSound("269597232", hed, 10, 1)
-	for i = 0,6,0.1 do
-                Character.Head.face.Texture = "rbxassetid://265057155"
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-0.7, -0.01 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-0.9, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function Choose()
-	attack = true
-	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://374187112"
-	CreateSound("130784263", hed, 10, 1)
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(110), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(110), Rad(0), Rad(0)), 0.1)
-	end
-	for i = 0,5,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(35), Rad(0), Rad(-10)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(35), Rad(0), Rad(10)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function slap()
-	attack = true
-	hum.WalkSpeed = 10
-	CreateSound("146163534", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://293603561"
-        game.Players.LocalPlayer.Character.Humanoid:TakeDamage(7)
-	CameraEnshaking(1, 2)
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(20), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(20), Rad(0), Rad(5)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(115 + 4), Rad(45), Rad(50)), 0.1)
-	end
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	attack = false
-	hum.WalkSpeed = 16
-end
-
-function MYSPAGHETTTTTTT() --ow
+function MYSPAGHETTTTTTT()
 	attack = true
 	hum.WalkSpeed = 1.01
 	CreateSound("1282149571", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://1329282756"
-        game.Players.LocalPlayer.Character.Humanoid:TakeDamage(10)
-	CameraEnshaking(1, 2.2)
 	for i = 0,4,0.1 do
 		swait()
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
@@ -1640,298 +1170,15 @@ function MYSPAGHETTTTTTT() --ow
 		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(35), Rad(0), Rad(10)), 0.1)
 	end
 	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	hum.WalkSpeed = 16
 end
 
-
-function dead()
-	attack = true
-	hum.WalkSpeed = 0.20
-	CreateSound("137225991", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://297512410"
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(90), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(180), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(270), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(90), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(180), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(270), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-	for i = 0,1.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(90)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-90)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(140)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-140)), 0.1)
-	end
-        Character.Head.face.Texture = "rbxassetid://273309187"
-	for i = 0,9,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -2.59 + 0.1) * angles(Rad(-90), Rad(90), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(30)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-30)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function hap() --much hap
-	attack = true
-	hum.WalkSpeed = 0.10
-	CreateSound("363808674", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://315792941"
-	for i = 0,12,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(180)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-0)), 0.1)
-	end
-	CreateSound("233168827", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://335761015"
-	for i = 0,10,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(180)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-0)), 0.1)
-	end
-        CreateSound("363808674", hed, 10, 1)
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function HAAAAA() --KONO POWA
+function FINLAND()
 	attack = true
 	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://305068389"
-        chargeup.Pitch = 1
-	for i = 0,7,0.1 do
+	CreateSound("313099773", hed, 10, 1)
+	for i = 0,6,0.1 do
 		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 1 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(-0)), 0.1)
-	end
-        Character.Head.face.Texture = "rbxassetid://313921371"
-        chargeup:play()
-	for i = 0,30,0.1 do
-		swait()
-		CameraEnshaking(1, 2)
-                chargeup.Parent = hed
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(15), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.4, 0.0000000005 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.4, 0.0000000005 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(-0)), 0.1)
-	end
-        chargeup:stop()
-        chargeup.Pitch = 1.1
-        chargeup.TimePosition = 1
-        chargeup:play()
-        Character.Head.face.Texture = "rbxassetid://304942859"
-        for i, v in pairs(c:children()) do
-        if v.ClassName == "Part" then
-        local tra = trazx:clone()
-        tra.Parent = v
-        tra.LightEmission = 1
-        tra.Color = ColorSequence.new(Color3.new(0, 0.6666666666666666, 1))
-        tra.Rate = 15
-        tra.Rotation = NumberRange.new(-5, 5)
-        tra.Lifetime = NumberRange.new(1.5, 2)
-        tra.Size = NumberSequence.new({
-          NumberSequenceKeypoint.new(0, 0.1, 0),
-          NumberSequenceKeypoint.new(1, 0, 0)
-        })
-        tra.Transparency = NumberSequence.new({
-          NumberSequenceKeypoint.new(0, 1, 0),
-          NumberSequenceKeypoint.new(0.135, 0, 0),
-          NumberSequenceKeypoint.new(0.875, 0, 0),
-          NumberSequenceKeypoint.new(1, 1, 0)
-        })
-        tra.Speed = NumberRange.new(0.5)
-        tra.VelocitySpread = 360
-        tra.VelocityInheritance = 0.5
-        tra.ZOffset = 2
-        tra.Acceleration = Vector3.new(0, 2.5, 0)
-      end
-    end
-    local tra = trazx:clone()
-    tra.Parent = c.HumanoidRootPart
-    tra.Texture = "rbxassetid://347730682"
-    tra.LightEmission = 0.8
-    tra.Color = ColorSequence.new(Color3.new(0, 0.6666666666666666, 1))
-    tra.Rate = 250
-    tra.Rotation = NumberRange.new(-5, 5)
-    tra.Lifetime = NumberRange.new(0.75)
-    tra.Size = NumberSequence.new({
-      NumberSequenceKeypoint.new(0, 4.81, 0.875),
-      NumberSequenceKeypoint.new(1, 2.13, 0.875)
-    })
-    tra.Transparency = NumberSequence.new({
-      NumberSequenceKeypoint.new(0, 1, 0),
-      NumberSequenceKeypoint.new(0.0399, 0.85, 0),
-      NumberSequenceKeypoint.new(0.394, 0.9, 0),
-      NumberSequenceKeypoint.new(0.699, 1, 0),
-      NumberSequenceKeypoint.new(1, 1, 0)
-    })
-    tra.Speed = NumberRange.new(15)
-    tra.VelocitySpread = 360
-    tra.VelocityInheritance = 0.5
-    tra.ZOffset = 3.5
-    tra.Acceleration = Vector3.new(0, 25, 0)
-	for i = 0,35,0.1 do
-		swait()
-                ohno.Parent = hed
-		CameraEnshaking(1, 3)
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(60), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.4, 0.0000000005 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.4, 0.0000000005 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(-0)), 0.1)
-	end
-        chargeup:stop()
-        chargeup.Pitch = 1.3
-        chargeup.TimePosition = 1
-        chargeup:play()
-        tra:Destroy()
-        tra:Destroy()
-        Character.Head.face.Texture = "rbxassetid://280233855"
-    local tra = trazx:clone()
-    tra.Parent = c.HumanoidRootPart
-    tra.Texture = "rbxassetid://347730682"
-    tra.LightEmission = 0.8
-    tra.Color = ColorSequence.new(Color3.new(1, 0, 0))
-    tra.Rate = 250
-    tra.Rotation = NumberRange.new(-5, 5)
-    tra.Lifetime = NumberRange.new(0.3)
-    tra.Size = NumberSequence.new({
-      NumberSequenceKeypoint.new(0, 8, 0.875),
-      NumberSequenceKeypoint.new(1, 10, 0.875)
-    })
-    tra.Transparency = NumberSequence.new({
-      NumberSequenceKeypoint.new(0, 1, 0),
-      NumberSequenceKeypoint.new(0.0399, 0.531, 0),
-      NumberSequenceKeypoint.new(0.394, 0.906, 0),
-      NumberSequenceKeypoint.new(0.699, 1, 0),
-      NumberSequenceKeypoint.new(1, 1, 0)
-    })
-	for i = 0,32,0.1 do
-		swait()
-		CameraEnshaking(1, 5)
-                chargeup.Parent = hed
-                game.Players.LocalPlayer.Character.Humanoid:TakeDamage(0.12)
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-65), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-20), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.4, 0.0000000005 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.4, 0.0000000005 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(150), Rad(0), Rad(-0)), 0.1)
-	end
-        chargeup:stop()
-        CreateSound("681582832", hed, 10, 1)
-        game.Players.LocalPlayer.Character:BreakJoints()
-        local S = Instance.new("Explosion",workspace)    
-        S.Position = tors.Position
-        S.BlastPressure = 9
-        S.BlastRadius = 30
-        S.ExplosionType = 0
-	attack = false
-	hum.WalkSpeed = 16
-        Character.Head.face.Texture = "rbxassetid://295197013"
-        tra:Destroy()
-	CameraEnshaking(4, 30)
-        error("WARNING, TO MUCH ENERGY.")
-end
-
-function NEN()
-	attack = true
-	hum.WalkSpeed = 1.01
-	CreateSound("230292011", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://705269463"
-	for i = 0,4,0.1 do
-		swait()
-		CameraEnshaking(1, 3)
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
 		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-90), Rad(0), Rad(0)), 0.3)
 		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
@@ -1940,283 +1187,6 @@ function NEN()
 		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
 	end
 	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function FLYSKYHIGH()
-	attack = true
-        timetofly = false
-	hum.WalkSpeed = 0.05
-        Character.Head.face.Texture = "rbxassetid://705269463"
-        Cause_Im_having_a_good_time_having_a_good_time:Play()
-        Cause_Im_having_a_good_time_having_a_good_time.TimePosition = 35.3
-        Humanoid.JumpPower = 0
-	for i = 0,300,0.1 do --thatsalongtime
-		swait()
-		CameraEnshaking(1, 7)
-	        HitboxFunction(ll.CFrame, 0.01, 1, 1, 1, 7, 75, 500, 100, "Knockdown")
-                Cause_Im_having_a_good_time_having_a_good_time.Parent = hed
-                root.Velocity = root.CFrame.lookVector * 225
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0-255.45*i), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0-255.45*i)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0-255.45*i)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-75), Rad(0), Rad(0)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-75), Rad(0), Rad(0)), 0.1)
-	end
-        Cause_Im_having_a_good_time_having_a_good_time:Stop()
-	attack = false
-        Humanoid.JumpPower = 50
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-        wait(45)
-        timetofly = true
-        warn("You can FLY SKY HIGH Now! Go Nuts!") --please dont go nuts
-end
-
-
-function highnoon()
-	attack = true
-	hum.WalkSpeed = 1.01
-	CreateSound("495316660", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://155195214"
-	CameraEnshaking(2, 4)
-	local Blobby = Instance.new("Part", char)
-Blobby.Name = "Blob"
-Blobby.CanCollide = false
-Blobby.BrickColor = BrickColor.new("Really black")
-Blobby.Transparency = 0
-Blobby.Material = "Plastic"
-Blobby.Size = Vector3.new(1, 1, 2)
-Blobby.TopSurface = Enum.SurfaceType.Smooth
-Blobby.BottomSurface = Enum.SurfaceType.Smooth
-
-local Weld = Instance.new("Weld", Blobby)
-Weld.Part0 = ra
-Weld.Part1 = Blobby
-Weld.C1 = CFrame.new(0, -.4, -1.6) *angles(Rad(180), Rad(0), Rad(180))
-Weld.C0 = CFrame.Angles(math.rad(-90),0,0)
-
-local M2 = Instance.new("SpecialMesh")
-M2.Parent = Blobby
-M2.MeshId = "http://www.roblox.com/asset/?id=432256490"
-M2.TextureId = "http://www.roblox.com/asset/?id=432256526"
-M2.Scale = Vector3.new(.002, .002, .002)
-	for i = 0,7.75,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(90)), 0.2)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(30), Rad(0), Rad(0)), 0.2)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.2)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.2)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(-.6), Rad(180)), 0.2)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-45), Rad(-.6), Rad(136 - 4.5 * Sin(sine / 20))), 0.2)
-        end
-	for i = 0,16.5,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(90)), 0.2)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(30), Rad(0), Rad(0)), 0.2)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.2)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.2)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(-.6), Rad(90)), 0.2)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-45), Rad(-.6), Rad(136 - 4.5 * Sin(sine / 20))), 0.2)
-	end
-	Blobby.Transparency = 1
-	Blobby:Destroy()
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function somuchcancerwhy() --o no
-	attack = true
-	hum.WalkSpeed = 0.10
-        Character.Head.face.Texture = "rbxassetid://315074049"
-        local A = math.random(1,13)
-        if A == 1 then
-            ohno.SoundId = "rbxassetid://295810519"
-            ohno.TimePosition = 1
-        end
-        if A == 2 then
-            ohno.SoundId = "rbxassetid://488472970"
-            ohno.TimePosition = 2
-        end
-        if A == 3 then
-            ohno.SoundId = "rbxassetid://917045199"
-            ohno.TimePosition = 3
-        end
-        if A == 4 then
-            ohno.SoundId = "rbxassetid://324205173"
-            ohno.TimePosition = 1
-        end
-        if A == 5 then
-            ohno.SoundId = "rbxassetid://376134741"
-            ohno.TimePosition = 8
-        end
-        if A == 6 then
-            ohno.SoundId = "rbxassetid://164147183"
-            ohno.TimePosition = 0
-        end
-        if A == 7 then
-            ohno.SoundId = "rbxassetid://825526716"
-            ohno.TimePosition = 1
-        end
-        if A == 8 then
-            ohno.SoundId = "rbxassetid://185460366"
-            ohno.TimePosition = 0
-        end
-        if A == 9 then
-            ohno.SoundId = "rbxassetid://273319633"
-            ohno.TimePosition = 1
-        end
-        if A == 10 then
-            ohno.SoundId = "rbxassetid://506212392"
-            ohno.TimePosition = 2
-        end
-        if A == 11 then
-            ohno.SoundId = "rbxassetid://708297448"
-            ohno.TimePosition = 4
-        end
-        if A == 12 then
-            ohno.SoundId = "rbxassetid://497199103"
-            ohno.TimePosition = 9
-        end
-        if A == 13 then
-            ohno.SoundId = "rbxassetid://152833989"
-            ohno.TimePosition = 1
-        end
-        ohno:Play()
-	for i = 0,100,0.1 do
-		swait()
-     		CameraEnshaking(2, 3)
-                ohno.Parent = hed
-	        char.Torso.Neck.C0 = char.Torso.Neck.C0 * CFrame.Angles(math.random(-10,10),math.random(-10,10),math.random(-10,10))
-	end
-	attack = false
-        ohno:Stop()
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function WRY() --WRYYYYYYY
-	attack = true
-	hum.WalkSpeed = 0.30
-	CreateSound("794081034", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://396389196"
-	for i = 0,2,0.1 do
-		swait()
-		CameraEnshaking(1, 2)
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(30), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(140), Rad(60)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(-140), Rad(-60)), 0.1)
-	end
-	for i = 0,14.7,0.1 do
-		swait()
-		CameraEnshaking(1, 3)
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 1, -1 + 0.1) * angles(Rad(-75), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(65), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-70)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1.1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(70)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(45), Rad(0), Rad(40)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(45), Rad(-0), Rad(-40)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function BOI()
-	attack = true
-	hum.WalkSpeed = 1.01
-	CreateSound("390901873", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://282463320"
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(50), Rad(90)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(-50), Rad(-90)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(30), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(140), Rad(60)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(-140), Rad(-60)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function WhatHuh()
-	attack = true
-	hum.WalkSpeed = 1.01
-	CreateSound("130766865", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://276732672"
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(26), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(120)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
-	end
- 	for i = 0,6.7,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(-26), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(120)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
-	end
-	for i = 0,8.1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(26), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(120)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
-	end
-	for i = 0,1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(40), Rad(-26), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(120)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
-	end
-	for i = 0,1,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(40), Rad(26), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(120)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
-	end
- 	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(-26), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(120)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-120)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	hum.WalkSpeed = 16
 end
 
@@ -2231,23 +1201,18 @@ function NothingPersonal()
 	root.CFrame = TORS.CFrame * CFrame.new(-1,0,3)
 	TORS.Anchored = true
 	hum.WalkSpeed = 0
-        Character.Head.face.Texture = "rbxassetid://40770311"
 	CreateSound("1255922819", hed, 10, 1)
-	CameraEnshaking(2, 4)
 		end
 		wait(3.5)
 		for i = 0,9,0.1 do
 			swait()
 			for i = 1,2 do
-	                HitboxFunction(ll.CFrame, 0.01, 1, 1, 1, 7, 1, 10, 53, "Knockdown")
-                        CameraEnshaking(1, 7)
-			Effects.Sphere.Create(BrickColor.new("Persimmon"), TORS.CFrame*CFrame.new(math.random(-200,200)/100,math.random(-300,200)/100,math.random(-100,100)/100), 1, 1, 1, 15, 15, 15, 0.2)
+			Effects.Sphere.Create(BrickColor.new("Really red"), TORS.CFrame*CFrame.new(math.random(-200,200)/100,math.random(-300,200)/100,math.random(-100,100)/100), 1, 1, 1, 15, 15, 15, 0.2)
 		    end
 		end
 		wait(.5)
 		TORS.Anchored = false
 		attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	hum.WalkSpeed = 16
 	end
 end
@@ -2255,7 +1220,6 @@ end
 function VeryMuchWorrying()
 	attack = true
 	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://111523405"
 	CreateSound("1395854043", hed, 10, 1)
 	for i = 0,14,0.1 do
 		swait()
@@ -2267,48 +1231,17 @@ function VeryMuchWorrying()
 		LW.C0 = clerp(LW.C0, CF(-1.3, 0.9 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(145)), 0.1)
 	end
 	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	hum.WalkSpeed = 16
 end
 
-function Ashes() --Straight from... Whatever it was called.
-        attack = true
-	hum.WalkSpeed = 1.01
-        Character.Head.face.Texture = "rbxassetid://360687027"
-	CreateSound("290084602", tors, 10, 1)
-	for i = 0,6.2,0.1 do
-			swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-30), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-5), Rad(0), Rad(-0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-0), Rad(0), Rad(145)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-0), Rad(0), Rad(-145)), 0.1)
-	end
-	for i = 0,6.2,0.1 do
-			swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(20), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-5), Rad(0), Rad(20)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-5), Rad(0), Rad(-20)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-30), Rad(0), Rad(15)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-30), Rad(0), Rad(-15)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
-	hum.WalkSpeed = 16
-end
-
-function AnotherOne() --WhAT ANOTHER ONE
+function AnotherOne()
 	attack = true
 	hum.WalkSpeed = 1.01
 	local icri = CreateSound("1205111204", hed, 10, 1)
-	swait(165)
+	swait(130)
 	local FRAME = tors.CFrame
 	repeat
 		swait()
-                Character.Head.face.Texture = "rbxassetid://582931093"
-		CameraEnshaking(1, 10)
 		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
 		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
 		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
@@ -2318,168 +1251,13 @@ function AnotherOne() --WhAT ANOTHER ONE
 		swait()
 		tors.CFrame = FRAME
 	until icri.Playing == false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	attack = false
-	hum.WalkSpeed = 16
-end
-
-function Dance()
-	attack = true
-	hum.WalkSpeed = 1.01
-	CreateSound("838766490", hed, 10, 1)
-        Character.Head.face.Texture = "rbxassetid://258591579"
-	for i = 0,2,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,4,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(-0), Rad(-180)), 0.1)
-	end
-	for i = 0,3,0.1 do
-		swait()
-		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-0), Rad(0), Rad(0)), 0.3)
-		RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 , 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(-30)), 0.15)
-		RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(50), Rad(0), Rad(180)), 0.1)
-		LW.C0 = clerp(LW.C0, CF(-1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(-50), Rad(-0), Rad(-180)), 0.1)
-	end
-	attack = false
-        Character.Head.face.Texture = "rbxassetid://620619801"
 	hum.WalkSpeed = 16
 end
 
 function kyu_will_break_your_neck_asdf_longest_function_name_ever_xd()
 attack = true
-        Character.Head.face.Texture = "rbxassetid://266304560"
+print('Fun Fact : "kyu_will_break_your_neck_asdf_longest_function_name_ever_xd" is the name of this function')
 	for i = 0,6,0.1 do
 		swait()
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
@@ -2490,8 +1268,7 @@ attack = true
 		LW.C0 = clerp(LW.C0, CF(-1.3, 0.8 + 0.05 * Sin(sine / 30), -0.025 * Cos(sine / 20)) * angles(Rad(140), Rad(0), Rad(15)), 0.1)
 	end
     CreateSound("1093102664", hed, 10, 1)
-	CameraEnshaking(3, 8)
-	for i = 0,2,0.1 do
+	for i = 0,4,0.1 do
 		swait()
 		rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1) * angles(Rad(5), Rad(0), Rad(0)), 0.15)
 		tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(10), Rad(40), Rad(0)), 0.4)
@@ -2500,10 +1277,8 @@ attack = true
 		RW.C0 = clerp(RW.C0, CF(1.3, 0.9 + 0.05 * Sin(sine / 30), 0.2 * Cos(sine / 20)) * angles(Rad(200), Rad(0), Rad(-40)), 0.4)
 		LW.C0 = clerp(LW.C0, CF(-1.3, 0.8 + 0.05 * Sin(sine / 30), -0.025 * Cos(sine / 20)) * angles(Rad(40), Rad(0), Rad(40)), 0.4)
 	end
-Character.Head.face.Texture = "rbxassetid://30128383"
 hum.MaxHealth = 0
 ragdoll(char)
-CreateSound("534269232", hed, 5, 1)
 error("Seems like you just died.")
 end
 
@@ -2513,94 +1288,36 @@ mouse.KeyDown:connect(function(key)
 		if MoreTaunts == false then
 		if key == 'q' then
 			GEtOuT()
-                elseif key == 'e' then
-                        GEtOuT2()
-                elseif key == 'x' then
-                        OBJECTION()
-                elseif key == 'n' then
-                        BOI()
-                elseif key == 'u' then
-                        Victory()
-                elseif key == '3' then
-                        hap()
-                elseif key == '6' then
-                        Flight()
-                elseif key == '9' and timetofly then
-                        FLYSKYHIGH()
-                elseif key == '9' then
-                        local A = math.random(1,10)
-                        if A == 1 then
-                            warn ("This has a Cooldown, Please wait. :>")
-                        end
-                        if A == 2 then
-                            warn ("You can't Fly All day, you know.")
-                        end
-                        if A == 3 then
-                            warn ("Calm down there.")
-                        end
-                        if A == 4 then
-                            warn ("Take a Break.")
-                        end
-                        if A == 5 then
-                            warn ("*Elevator Music plays in the backround*")
-                        end
-                        if A == 6 then
-                            warn ("I know, You want to FLY SKY HIGH, but wait a little bit.")
-                        end
-                        if A == 7 then
-                            warn ("Can you wait a LITTLE Longer?")
-                        end
-                        if A == 8 then
-                            warn ("Like a tiger defying the laws of gravity...")
-                        end
-                        if A == 9 then
-                            warn ("DON'T STOP ME NNNNNOOOOOOOOWWWW")
-                        end
-                        if A == 10 then
-                            warn ("Oh, I'm burnin' through the sky, Yeah!")
-                        end
-                elseif key == 'k' then
-                        Hello()
-                elseif key == '5' then
-                        HAAAAA()
-                elseif key == '4' then
-                        Dance()
-                elseif key == '1' then
-                        HELP()
-		elseif key == '2' then
-			dead()
-                elseif key == 'j' then
-                        WhatHuh()
-		elseif key == 'l' then
+		elseif key == 'e' then
 			ShutTheHellUp()
-                elseif key == 'c' then
-                        Choose()
 		elseif key == 'r' then
 			MYSPAGHETTTTTTT()
 		elseif key == 't' then
 			SpinMeDad()
 		elseif key == 'y' then
 			EndMySufferingV2()
+		elseif key == 'u' then
+			print'ur mom gey'
 		elseif key == 'f' then
-			NEN()
+			FINLAND()
 		elseif key == 'z' then
 			NothingPersonal()
-		elseif key == '7' then
-			somuchcancerwhy()
-		elseif key == '8' then
-			highnoon()
 		elseif key == 'v' then
 			VeryMuchWorrying()
-                elseif key == 'b' then
-                        Ashes()
-                elseif key == 'p' then
-                        kyu_will_break_your_neck_asdf_longest_function_name_ever_xd()
-                elseif key == 'g' then
-                        AnotherOne()
-                elseif key == 'h' then
-                        slap()
-                elseif key == 'm' then
-                        WRY()
+		end
+		end
+		if key == 'g' and MoreTaunts == false then
+			print'more tauntys yey'
+			MoreTaunts = true
+		elseif key == 'g' and MoreTaunts == true then
+			print'rip tauntys ;c'
+			MoreTaunts = false
+		end
+		if MoreTaunts == true then
+		if key == 'q' then
+			AnotherOne()
+		elseif key == 't' then
+			kyu_will_break_your_neck_asdf_longest_function_name_ever_xd()
 		end
 		end
 		end
@@ -2613,10 +1330,8 @@ mouse.KeyDown:connect(function(key)
 
 
 
-while jumping do
- Humanoid.Jump = true
- wait(0.9)
-end
+
+
 
 
 
@@ -2647,7 +1362,7 @@ while true do
 			Anim = "Jump"
 			if attack == false then
 				rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(10), Rad(0), Rad(0)), 0.3)
-				tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-40), Rad(0), Rad(0)), 0.3)
+				tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-10), Rad(0), Rad(0)), 0.3)
 				RW.C0 = clerp(RW.C0, CF(1.5, 0.5, 0) * angles(Rad(30), Rad(0), Rad(20)), 0.3)
 				LW.C0 = clerp(LW.C0, CF(-1.5, 0.5, 0) * angles(Rad(-20), Rad(0), Rad(-30)), 0.3)
 				LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), -0.3) * LHCF * angles(Rad(-5), Rad(0), Rad(20)), 0.15)
@@ -2657,7 +1372,7 @@ while true do
 			Anim = "Fall"
 			if attack == false then
 				rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(-5), Rad(0), Rad(0)), 0.3)
-				tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(40), Rad(0), Rad(0)), 0.3)
+				tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(10), Rad(0), Rad(0)), 0.3)
 				RW.C0 = clerp(RW.C0, CF(1.5, 0.5, 0) * angles(Rad(30), Rad(0), Rad(20)), 0.3)
 				LW.C0 = clerp(LW.C0, CF(-1.5, 0.5, 0) * angles(Rad(-20), Rad(0), Rad(-30)), 0.3)
 				LH.C0=clerp(LH.C0, CF(-1,-.4-0.1 * Cos(sine / 20), -.6) * LHCF * angles(Rad(-5), Rad(-0), Rad(20)), 0.15)
@@ -2668,7 +1383,7 @@ while true do
 			change = 1
 			if attack == false then
 				rootj.C0 = clerp(rootj.C0, RootCF * CF(0, 0, -0.1 + 0.1 * Cos(sine / 20)) * angles(Rad(0), Rad(0), Rad(0)), 0.15)
-				tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(0), Rad(0), Rad(0)), 0.3)
+				tors.Neck.C0 = clerp(tors.Neck.C0, necko * angles(Rad(-30), Rad(0), Rad(0)), 0.3)
 				RH.C0 = clerp(RH.C0, CF(1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * RHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
 				LH.C0 = clerp(LH.C0, CF(-1, -0.9 - 0.1 * Cos(sine / 20), 0.025 * Cos(sine / 20)) * LHCF * angles(Rad(-2.5), Rad(0), Rad(0)), 0.15)
 				RW.C0 = clerp(RW.C0, CF(1.5, 0.5 + 0.05 * Sin(sine / 30), 0.025 * Cos(sine / 20)) * angles(Rad(30 * Cos(sine / 20)), Rad(0), Rad(5)), 0.1)
@@ -2747,5 +1462,3 @@ end
 -------------------------------------------------------
 --End Animations And Script--
 -------------------------------------------------------
-
---cool beans boibiparti
