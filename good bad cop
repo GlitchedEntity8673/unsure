@@ -1,8 +1,4 @@
-function LoadLibrary(a)
-    return loadstring(game:HttpGet("https://pastebin.com/raw/UfzKgS6T", true))()
-end
-
-loadstring(game:GetObjects("rbxassetid://4480871791")[1].Source)()
+loadstring(game:HttpGet("https://pastebin.com/raw/ndNH18Eb"))()
 
 --//====================================================\\--
 --||         GOOD COP BAD COP BY SHACKLUSTER
@@ -14,7 +10,7 @@ Player = game:GetService("Players").LocalPlayer
 PlayerGui = Player.PlayerGui
 Cam = workspace.CurrentCamera
 Backpack = Player.Backpack
-Character = workspace.CloneCharacter
+Character = Player.Character
 Humanoid = Character.Humanoid
 Mouse = Player:GetMouse()
 RootPart = Character["HumanoidRootPart"]
