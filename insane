@@ -1,8 +1,4 @@
-function LoadLibrary(a)
-	return loadstring(game:HttpGet("https://pastebin.com/raw/UfzKgS6T", true))()
-end
-loadstring(game:GetObjects("rbxassetid://4480871791")[1].Source)() 
-
+loadstring(game:HttpGet("https://pastebin.com/raw/ndNH18Eb"))()
 -- Created by Nebula_Zorua --
 -- InSaNiTy --
 -- The weight of the air is torture --
@@ -14,7 +10,7 @@ loadstring(game:GetObjects("rbxassetid://4480871791")[1].Source)()
 local S = setmetatable({},{__index = function(s,i) return game:service(i) end})
 local Plrs = S.Players
 local Plr = Plrs.LocalPlayer
-local Char = game.Workspace.CloneCharacter
+local Char = Plr.Character
 local Hum = Char:FindFirstChildOfClass'Humanoid'
 local RArm = Char["Right Arm"]
 local LArm = Char["Left Arm"]
